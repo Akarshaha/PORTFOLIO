@@ -1,0 +1,32 @@
+.project-component {
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrolling */
+  background-color: black;
+
+}
+
+.project-description{
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.full-page-carousel {
+  height: 100%; 
+}
+
+.project-slide {
+  display: flex;
+  align-items: center;
+  height: 100vh; /* Full viewport height for the slide */
+  padding: 20px; 
+}
+
+.project-image {
+  width: 30%; /* Set a smaller width for the image */
+  height: 60%; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the area without stretching */
+  margin-right: 20px; /* Space between image and text */
+  border-radius: 10px;
+}

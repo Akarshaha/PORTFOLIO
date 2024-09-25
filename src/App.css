@@ -1,0 +1,63 @@
+/* Light mode default */
+.app.light-mode {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+.app.dark-mode {
+  background-color: #181818;
+  color: #f1f1f1;
+}
+
+/* Dark mode button */
+.dark-mode-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode-button:hover {
+  background-color: #0056b3;
+}
+
+/* Light mode button */
+.light-mode-button {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.light-mode-button:hover {
+  background-color: #e0a800;
+}
+
+/* Navbar style updates for both dark and light modes */
+.navbar {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Mode toggle button container */
+.mode-toggle {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .dark-mode-button, .light-mode-button {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+}

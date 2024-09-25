@@ -1,0 +1,124 @@
+/* Contact Section Styling */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #19d44e;
+    transition: background-color 0.5s ease;
+    background-image: url(./Images/fire.jpg);
+    background-size: 50% 50%;
+  }
+  
+  .contact-container {
+    max-width: 600px;
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #4d3a3a;
+
+  }
+  
+  .contact-form {
+    margin-bottom:0px;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 0px;
+  }
+  
+  .contact-form label {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    display: block;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  .contact-form textarea {
+    height: 120px;
+  }
+  
+  .submit-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .contact-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  .social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icon {
+    font-size: 2rem;
+    margin: 0 15px;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #ff5722;
+  }
+  
+  /* Dark Mode Styling */
+  .app.dark-mode .contact-section {
+    background-color: #2a2a2a;
+  }
+  
+  .app.dark-mode .contact-container {
+    background-color: rgba(40, 40, 40, 0.9);
+    color: #e0e0e0;
+  }
+  
+  .app.dark-mode .contact-icon,
+  .app.dark-mode .social-icon {
+    color: #ffb700;
+  }
+  
+  .app.dark-mode .submit-btn {
+    background-color: #ff5722;
+  }
+  
+  .app.dark-mode .submit-btn:hover {
+    background-color: #e64a19;
+  }
+ 

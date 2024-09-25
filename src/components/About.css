@@ -1,0 +1,91 @@
+/* General styling for the About section */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #f9f9f9; /* General background for light mode */
+  text-align: center;
+  transition: background-color 0.5s ease;
+  background-image: url(./Images/pexels-pixabay-267885.jpg);
+  background-size: 100%,100%;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 600px; /* Limit the width of the carousel */
+  margin: 0 auto;
+}
+
+.carousel-slide {
+  padding: 40px;
+  color: #e52222; /* Default text color for slides */
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Slide 1: Graduation Slide */
+.graduation-slide {
+  background-color: darkorange;
+  /* background-image: url('./Images/notebook.jpg'); */
+  /* background-size: 100%,100%; Add the path to your image */
+}
+
+.graduation-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffd700; /* Gold color for graduation cap */
+}
+
+/* Slide 2: Open to Work Slide */
+.work-slide {
+  background-color: darkorange;
+
+  background-image: url('/path/to/work-image.jpg'); /* Add the path to your image */
+}
+
+/* Text styling inside the carousel */
+.carousel-content h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.carousel-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Dark mode styling */
+.app.dark-mode .about-section {
+  background-color: #2a2a2a; /* Dark background for the section */
+}
+
+.app.dark-mode .graduation-slide, 
+.app.dark-mode .work-slide {
+  color: #e0e0e0; /* Light text color in dark mode */
+}
+
+.app.dark-mode .graduation-slide::before,
+.app.dark-mode .work-slide::before {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 20px;
+  }
+
+  .carousel-content h3 {
+    font-size: 2rem;
+  }
+
+  .carousel-content p {
+    font-size: 1rem;
+  }
+}
